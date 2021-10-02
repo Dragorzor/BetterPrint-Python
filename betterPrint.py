@@ -79,11 +79,7 @@ def printLog(text, argument = {"debug": False, "sep": ""}):
                     Bright +
                     "🟢 - CONSOLE :" +
                     FgMagenta +
-                    "< DEBUG >\n" +
-                    checkType(text) +
-                    Reset +
-                    FgWhite,
-                    text,
+                    f"< DEBUG >\n{checkType(text)}{Reset}{FgWhite}{text}",
                     "\n" +
                     Reset
                 )
@@ -92,10 +88,7 @@ def printLog(text, argument = {"debug": False, "sep": ""}):
                     Reset +
                     FgGreen +
                     Bright +
-                    "🟢 - CONSOLE\n" +
-                    Reset +
-                    FgWhite,
-                    text,
+                    f"🟢 - CONSOLE\n{Reset}{FgWhite}{text}",
                     Reset +
                     "\n"
                 )
@@ -104,10 +97,7 @@ def printLog(text, argument = {"debug": False, "sep": ""}):
                 Reset +
                 FgGreen +
                 Bright +
-                "🟢 - CONSOLE\n" +
-                Reset +
-                FgWhite,
-                text,
+                f"🟢 - CONSOLE\n{Reset}{FgWhite}{text}",
                 Reset +
                 "\n"
             )
@@ -119,11 +109,7 @@ def printLog(text, argument = {"debug": False, "sep": ""}):
                     Bright +
                     "🟢 - CONSOLE :" +
                     FgMagenta +
-                    "< DEBUG >\n" +
-                    checkType(text) +
-                    Reset +
-                    FgWhite,
-                    text,
+                    f"< DEBUG >\n{checkType(text)}{Reset}{FgWhite}{text}",
                     "\n" +
                     Reset
                 )
@@ -132,10 +118,7 @@ def printLog(text, argument = {"debug": False, "sep": ""}):
                 Reset +
                 FgGreen +
                 Bright +
-                "🟢 - CONSOLE\n" +
-                Reset +
-                FgWhite,
-                text,
+                f"🟢 - CONSOLE\n{Reset}{FgWhite}{text}",
                 Reset +
                 "\n"
             )
