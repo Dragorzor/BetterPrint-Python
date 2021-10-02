@@ -4,6 +4,8 @@
 import time
 import colorama as color
 
+color.init()
+
 Reset = color.Style.RESET_ALL
 Bright = color.Style.BRIGHT
 
