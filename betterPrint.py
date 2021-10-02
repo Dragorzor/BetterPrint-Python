@@ -2,20 +2,21 @@
 # Fonction disponible : printError(), printWarning(), printLog(), timer()
 
 import time
+import colorama as color
 
-Reset = "\x1b[0m"
-Bright = "\x1b[1m"
+Reset = color.Style.RESET_ALL
+Bright = color.Style.BRIGHT
 
-BgBlue = "\x1b[44m"
+BgBlue = color.Back.BLUE
 
-FgBlack = "\x1b[30m"
-FgRed = "\x1b[31m"
-FgGreen = "\x1b[32m"
-FgYellow = "\x1b[33m"
-FgBlue = "\x1b[34m"
-FgMagenta = "\x1b[35m"
-FgCyan = "\x1b[36m"
-FgWhite = "\x1b[37m"
+FgBlack = color.Fore.BLACK
+FgRed = color.Fore.RED
+FgGreen = color.Fore.GREEN
+FgYellow = color.Fore.YELLOW
+FgBlue = color.Fore.BLUE
+FgMagenta = color.Fore.MAGENTA
+FgCyan = color.Fore.CYAN
+FgWhite = color.Fore.WHITE
 
 global timeSaved
 timeSaved = 0
@@ -154,7 +155,7 @@ def timer(active):
         )
 
 def checkType(text):
-    if(type(text) == int): return(f"{FgYellow}Nombre entier : {Reset}")
+    if(type(text) == int): return(f"{FgYellow}Nombre entier/Relatif : {Reset}")
     if(type(text) == float): return(f"{FgYellow}Nombre décimal : {Reset}")
     if(type(text) == tuple): return(f"{FgMagenta}Tuple : {Reset}")
     if(type(text) == list): return(f"{FgMagenta}List : {Reset}")
