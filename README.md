@@ -37,4 +37,4 @@ Les modules utilisé sont `time` et `colorama`.
 
 
 ### Image
-![betterPrint_Python](https://i.imgur.com/ofrhFFA.png)
+![betterPrint_Python](https://i.imgur.com/zlK3Fo1.png)
